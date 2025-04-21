@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Midwest Emo Song Title Generator</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #e6e6e6;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 2rem;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: none;
+      width: 250px;
+      background-color: #292929;
+      color: #fff;
+    }
+
+    #name {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      padding: 1rem;
+      background: #292929;
+      border-radius: 6px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #7fbcff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    a {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Midwest Emo Song Title Generator</h1>
+
+  <input id="snack" type="text" placeholder="Favorite snack" />
+  <input id="car" type="text" placeholder="Type of car" />
+  <input id="place" type="text" placeholder="Someplace sad" />
+  <input id="object" type="text" placeholder="Something you lost" />
+  <input id="person" type="text" placeholder="Someone’s name" />
+
+  <button onclick="generateTitle()">Make It Hurt</button>
+
+  <div id="name">Your emo song title will appear here</div>
+  <a href="index.html">← Back to main page</a>
+
+  <script>
+    const templates = [
+      "I Left My {snack} in Your {car}, and I Still Regret It",
+      "You Took the {object}, But You Left the Playlist",
+      "We Broke Up in the {place} Parking Lot",
+      "{person} Said It Wasn’t About the {snack}, But It Was",
+      "There’s Still {object} Under Your Seat in My {car}",
+      "I Can’t Drive Past the {place} Without Crying",
+      "{person} Blocked Me After I Ate Their Last {snack}",
+      "You Threw My {object} Out the Window of the {car}",
+      "This Song is Just a Voicemail I Recorded in the {place}",
+      "All My Friends Knew About the {object}, {person}"
+    ];
+
+    function generateTitle() {
+      const snack = document.getElementById('snack').value || "Hot Cheetos";
+      const car = document.getElementById('car').value || "2003 Corolla";
+      const place = document.getElementById('place').value || "Walmart";
+      const object = document.getElementById('object').value || "hoodie";
+      const person = document.getElementById('person').value || "Maddie";
+
+      const randomTemplate = templates[Math.floor(Math.random() * templates.length)];
+      const title = randomTemplate
+        .replace("{snack}", snack)
+        .replace("{car}", car)
+        .replace("{place}", place)
+        .replace("{object}", object)
+        .replace("{person}", person);
+
+      document.getElementById('name').textContent = `"${title}"`;
+    }
+  </script>
+</body>
+</html>

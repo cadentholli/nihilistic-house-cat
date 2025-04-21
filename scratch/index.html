@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midwest Emo Scratch Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Midwest Emo Appreciation Page</h1>
+    <h3>Melodic, arpeggiated riffs | Odd time signatures | Really, really bad vocals</h3>
+    <nav>
+      <a href="#video">Skip to Video</a> |
+      <a href="#graph">See the Graph</a> |
+      <a href="../startbootstrap-clean-blog-gh-pages/index.html" >Back to Portfolio</a>
+    </nav>
+  </header>
+
+  <section class="list-section">
+    <h2>Top Midwest Emo Bands (imho)</h2>
+    <ol>
+      <li>Free Throw
+        <ul>
+          <li>Perfect blend of mathy riffs and melodic breakdowns</li>
+          <li>Nashville-based emo revival band</li>
+          <li>They have a song titled: "Hey Ken, Someone Methodically Mushed the Donuts"</li>
+        </ul>
+      </li>
+      <li>Mom Jeans.
+        <ul>
+          <li>Twinkly guitar with interesting song structures and timing changes</li>
+          <li>Bay Area band known for midwest emo revival style</li>
+          <li>Sounds like your buddy's band that is awful but you support him anyway cause you are a good friend</li>
+        </ul>
+      </li>
+      <li>Tigers Jaw
+        <ul>
+          <li>Scranton-based band blending emo and indie rock</li>
+          <li>Signature dual vocals from Ben and Brianna</li>
+          <li>"Plane Vs. Tank Vs. Submarine" is a masterpiece</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="image-section">
+    <h2>Free Throw</h2>
+    <img src="https://www.yardhawk.net/everybodytalking/wp-content/uploads/2022/01/freethrow-4.jpg" alt="Moody guitar" width="500" />
+  </section>
+
+  <section class="image-section">
+    <h2>Mom Jeans.</h2>
+    <img src="https://i.pinimg.com/736x/61/58/e4/6158e454410b6794bf7a2d7c9c674f8d.jpg" alt="Moody guitar" width="500" />
+  </section>
+
+  <section class="image-section">
+    <h2>Tigers Jaw</h2>
+    <img src="https://xpressmag.com.au/wp-content/uploads/2018/11/TIGERSJAW.02.png" alt="Moody guitar" width="500" />
+  </section>
+
+  <section id="video" class="video-section">
+    <h2>Watch: A Pretty Good Midwest Emo Playlist I found on Youtube</h2>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0mB03o4oWhw" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="graph" class="graph-section">
+    <h2>Music Genre Clustering</h2>
+    <p>Check out this Tableau viz showing how different music genres cluster together based on their features.</p>
+  
+    <div class='tableauPlaceholder' id='viz1745225114819' style='position: relative'>
+      <noscript><a href='#'><img alt='Music Genres' src='https://public.tableau.com/static/images/Cl/Clusteringmusicgenres/Dashboard1/1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='Clusteringmusicgenres/Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/Cl/Clusteringmusicgenres/Dashboard1/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+    
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1745225114819');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.minWidth = '420px';
+        vizElement.style.maxWidth = '650px';
+        vizElement.style.width = '100%';
+        vizElement.style.minHeight = '587px';
+        vizElement.style.maxHeight = '887px';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '420px';
+        vizElement.style.maxWidth = '650px';
+        vizElement.style.width = '100%';
+        vizElement.style.minHeight = '587px';
+        vizElement.style.maxHeight = '887px';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1477px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </section>
+
+  <footer>
+    <a href="#top">Back to top</a> |
+    <a href="songname-generator.html">Try My Emo Song Title Generator</a>
+  </footer>
+
+</body>
+</html>

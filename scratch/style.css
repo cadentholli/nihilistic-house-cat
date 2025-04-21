@@ -1,0 +1,82 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, section, footer {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+  }
+  
+  header {
+    background-color: #292929;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #7fbcff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  nav a:hover {
+    color: #ffffff; /* turns white on hover */
+  }
+  
+  .list-section {
+    background-color: #2a2a2a;
+  }
+  
+  .image-section {
+    background-color: #242424;
+    text-align: center;
+  }
+  
+  .video-section {
+    background-color: #2e2e2e;
+  }
+  
+  .graph-section {
+    background-color: #1c1c1c;
+  }
+  
+  footer {
+    background-color: #141414;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .video-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer {
+    background-color: #141414;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  
+  footer a {
+    color: #7fbcff; /* soft bluish highlight */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s ease;
+  }
+  
+  footer a:hover {
+    color: #ffffff; /* turns white on hover */
+  }
+  
+  footer a:visited {
+    color: #7fbcff; /* same as default so visited doesn't turn ugly */
+  }
+  
+  footer a:active {
+    color: #b3e5ff; /* light blue when clicked */
+  }
